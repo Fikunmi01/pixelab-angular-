@@ -1,0 +1,91 @@
+<div class="font-serif pt-10">
+    <div class="text-center relative pb-20">
+        <p class="text-lightGray leading-normal text-base font-bold">TESTIMONIALS</p>
+        <h1 class="text-5xl text-darkBlue font-bold">What Clients say about us</h1>
+    </div>
+
+    <div class="grid grid-cols-2 px-24 gap-x-10 relative gap-y-10 pb-10">
+        <div *ngFor="let review of testimonialArray" class=" flex items-start gap-10 ">
+            <img class='' src={{review.imgSrc}} alt="">
+
+            <div>
+                <p class="text-darkBlue font-medium text-lg pb-5">{{review.review}}</p>
+                <p class="text-lightGray font-bold">{{review.author}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="font-serif pt-10 pb-10 px-24">
+    <div class="text-center relative pb-10">
+        <p class="text-lightGray leading-normal text-base font-bold">OUR TEAM</p>
+        <h1 class="text-5xl text-darkBlue font-bold">Meet The Team</h1>
+    </div>
+
+    <div class="flex px-24 justify-center gap-10 relative">
+        <div *ngFor="let team of teamArray" class="w-80 flex Border flex-col items-center pt-10 ">
+            <div>
+                <img src={{team.imgSrc}} alt="">
+            </div>
+
+            <h2 class="leading-loose text-xl text-lightBlue font-medium">{{team.teamMember}}</h2>
+            <p class="leading-loose font-bold text-lightGray text-sm">{{team.teamRole}}</p>
+
+            <div class="flex pt-10 ">
+                <div class="w-24 text-center py-3 border-2 border-b-0">
+                    <i class="uil uil-twitter text-lightGray text-2xl"></i>
+                </div>
+                <div class="w-24 text-center py-3 border-r-2 border-t-2">
+                    <i class="uil uil-facebook text-2xl  text-lightGray"></i>
+                </div>
+                <div class="w-24 text-center py-3 border-r-2 border-t-2">
+                    <i class="uil uil-dribbble text-2xl text-lightGray"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="font-serif pt-10 px-24">
+    <div class="text-center relative pb-10">
+        <p class="text-lightGray leading-normal text-base font-bold">OUR TEAM</p>
+        <h1 class="text-5xl text-darkBlue font-bold">Subscribe Our Newsletter</h1>
+    </div>
+
+    <div class="flex justify-between">
+        <div>
+            <img src="../assets/Frame.png" alt="">
+        </div>
+
+        <div class="w-1/2 flex flex-col gap-y-10">
+            <p class="text-lg leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam</p>
+            <input type="text" name="" id=""
+                class="px-5 text-black font-normal outline-none placeholder:text-2xl placeholder:text-black text-2xl py-4 rounded-full boxShadow"
+                placeholder="Your E-mail here">
+
+            <button class="bg-orange py-3 text-lg text-white rounded-full">Subscribe to Our Newsletter</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="px-24 pt-20 pb-10 items-center font-serif justify-between flex">
+    <div class="w-32">
+        <img src="../assets/logo.png" alt="">
+    </div>
+    <div>
+        <p class="text-lightBlue text-base font-normal">&#169; {{year}} Epixelab. All rights reserved.</p>
+    </div>
+
+    <div>
+        <ul class="flex text-lightBlue gap-5 text-base">
+            <li>Portfolio</li>
+            <li>How it Works</li>
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Login</li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="flex items-center justify-between px-24 font-serif text-lg py-6">
+    <div>
+        <img src="../assets/logo.png" class="w-1/2" alt="">
+    </div>
+    <div>
+        <ul class="flex gap-10">
+            <li *ngFor="let value of navlink" class="font-serif">{{value.link}}</li>
+        </ul>
+    </div>
+
+    <div class="flex gap-4">
+        <button>Log in</button>
+        <button class="bg-orange px-6 py-1 rounded-lg text-white">Sign up</button>
+    </div>
+</div>
