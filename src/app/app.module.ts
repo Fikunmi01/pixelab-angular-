@@ -14,13 +14,10 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
     NavbarComponent,
     HeroComponent,
     ServiceComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

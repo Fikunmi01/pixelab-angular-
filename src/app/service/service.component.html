@@ -1,30 +1,30 @@
 <div class="font-serif pb-10">
-    <div class="text-center relative pb-20">
+    <div class="text-center relative lg:pb-20 pb-10 pt-16 lg:pt-0">
         <p class="text-lightGray leading-normal text-base font-bold">SERVICE</p>
-        <h1 class="text-5xl text-darkBlue font-bold">Our Vision & Our Goal</h1>
+        <h1 class="text-3xl lg:text-5xl text-darkBlue font-bold">Our Vision & Our Goal</h1>
     </div>
-    <div class="flex px-24 gap-10">
+    <div class="flex flex-col lg:flex-row px-4 lg:px-24 gap-10">
         <div *ngFor='let values of serviceArray' class="boxShadow rounded-3xl">
             <div class="h-20">
                 <img class="m-auto w-16" src={{values.icon}} alt="">
 
             </div>
-            <h2 class="text-center text-4xl pb-3 font-bold">{{values.role}}</h2>
-            <p class="w-2/3 m-auto text-lg pb-5">{{values.description}}</p>
+            <h2 class="text-center text-3xl lg:text-4xl pb-3 font-bold">{{values.role}}</h2>
+            <p class="px-8 lg:w-2/3 m-auto text-lg pb-5">{{values.description}}</p>
             <button class="left-1/3 px-4 py-2 text-white relative bg-orange text-lg mb-7 font-medium rounded-lg">Learn
                 More</button>
         </div>
     </div>
 </div>
 
-<div class="px-24 mt-28 flex font-serif pb-10">
+<div class="lg:px-24 px-4 mt-14 lg:mt-28 flex flex-col-reverse lg:flex-row font-serif pb-10">
     <div>
-        <h3 class="text-lightBlue text-2xl w-1/2 pb-5 font-medium">Many Blocks and Components</h3>
-        <p class="text-base  text-lightGray w-1/2 pb-16">Startup Framework contains components and complex blocks which can easily be integrated into almost any
+        <h3 class="text-lightBlue text-2xl lg:w-1/2 pb-5 font-medium">Many Blocks and Components</h3>
+        <p class="text-base text-lightGray lg:w-1/2 pb-4 lg:pb-16">Startup Framework contains components and complex blocks which can easily be integrated into almost any
             design. </p>
         <button class="border-solid border-2 text-lightBlue font-medium px-8 py-2 text-base rounded-full">Explore</button>
     </div>
-    <div>
+    <div class="lg:pb-0 pb-4">
         <img src="../assets/VideoPlayer.png" alt="">
     </div>
 </div>

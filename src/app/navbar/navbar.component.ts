@@ -1,30 +1,32 @@
-import { Component } from '@angular/core';
+import { Component, Type } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent {
-  navlink: Array<any>=[
+  showMenu: boolean = true;
+  navlink: Array<any> = [
     {
-      link:'Home',
-      linkSrc:'',
+      link: 'Home',
+      linkSrc: '',
     },
     {
-      link:'About Us',
-      linkSrc:'',
+      link: 'About Us',
+      linkSrc: '',
     },
     {
-      link:'Our App',
-      linkSrc:'',
+      link: 'Our App',
+      linkSrc: '',
     },
     {
-      link:'Contacts',
-      linkSrc:'',
+      link: 'Contacts',
+      linkSrc: '',
     },
-    
-  ]
+  ];
 
-
+  toggleMenu() {
+    this.showMenu = !this.showMenu;
+  }
 }

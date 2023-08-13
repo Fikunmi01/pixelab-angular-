@@ -1,6 +1,6 @@
-<div class="flex items-center justify-between px-24 font-serif text-lg py-6">
+<div class="lg:flex items-center justify-between px-24 font-serif text-lg py-6 lg:visible hidden">
     <div>
-        <img src="../assets/logo.png" class="w-1/2" alt="">
+        <img src="/assets/logo.png" class="w-1/2" alt="">
     </div>
     <div>
         <ul class="flex gap-10">
@@ -12,4 +12,34 @@
         <button>Log in</button>
         <button class="bg-orange px-6 py-1 rounded-lg text-white">Sign up</button>
     </div>
+</div>
+
+
+
+<div class="flex px-4 py-5 justify-between lg:hidden boxShadow items-center">
+    <div>
+        <img src="../assets/logo.png" class="w-1/2" alt="">
+    </div>
+
+    <button (click)="toggleMenu()" *ngIf="showMenu" class="cursor-pointer text-2xl"><i class="uil uil-bars"></i></button>
+    <button (click)="toggleMenu()" *ngIf="!showMenu" class="text-2xl"><i class="uil uil-times"></i></button>
+</div>
+
+
+<div class="flex items-center justify-between px-4 font-serif text-lg py-6 lg:hidden" *ngIf="showMenu else altMenu">
+</div>
+
+<ng-template #altMenu>
+    <div class="lg:hidden absolute z-10 bg-white w-full min-h-screen pt-5 text-xl">
+        <ul class="flex flex-col gap-10 px-4">
+            <li *ngFor="let value of navlink" class="mx-auto font-serif">{{value.link}}</li>
+            <button>Log in</button>
+            <button class="bg-orange px-6 py-3 rounded-lg text-white">Sign up</button>
+        </ul>
+    </div>
+</ng-template>
+
+
+
+<div *ngIf="!showMenu">
 </div>
